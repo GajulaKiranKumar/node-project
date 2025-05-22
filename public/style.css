@@ -1,0 +1,178 @@
+
+.cl {
+    margin: 10px 0;
+}
+
+.cl label {
+    display: inline-block;
+    width: 120px;
+    font-weight: bold;
+}
+
+.cl input {
+    padding: 5px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+button {
+    margin-top: 15px;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+.up {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.up label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.up input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: opacity 0.3s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+
+
+.c2 {
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    width: 80%;
+    height: auto;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.c3 {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.c3 li {
+    margin: 8px 0;
+    color: #333;
+}
+
+.nte-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+    list-style-type: none;
+}
+
+.noteinfo a, .edit a, .delete a {
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: white;
+}
+
+.noteinfo a {
+    background-color: #4CAF50;
+}
+
+.edit a {
+    background-color: #2196F3;
+}
+
+.delete a {
+    background-color: #f44336;
+}
+
+marquee h1 {
+    color: #ff4444;
+    font-size: 24px;
+    padding: 20px;
+}
+
+.c4 {
+    list-style: none;
+    padding: 20px;
+    margin: 15px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.c4 li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+    color: #333;
+}
+
+.c4 li:last-child {
+    border-bottom: none;
+}
+
+marquee {
+    background-color: #ff4444;
+    color: white;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+marquee h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+
+  

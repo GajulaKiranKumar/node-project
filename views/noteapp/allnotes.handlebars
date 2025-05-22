@@ -1,0 +1,29 @@
+<section class="notelist">
+    <article>
+        <h1>ALl Notes</h1>
+        {{#each payload}}
+        <div class="c2">
+            <ul class="c3">
+                <li>Note Id: {{this.noteId}}</li>
+                <li>Note Name: {{this.noteName}}</li>
+                <li>Note Description: {{this.description}}</li>
+                <li> Note Status: {{this.status}}</li>
+            </ul>
+            <li class="nte-group">
+                <span class="noteinfo">
+                    <a href=" /api/{{this._id}}">INFORMATION</a>
+                </span>
+                <span class="edit">
+                    <a href="/api/edit/{{this._id}}">UPDATE </a>
+                </span>
+                <sapn class="delete">
+                    <a href="/api/delete/{{this._id}}">DELETE</a>
+                </sapn>
+
+            </li>
+        </div>
+        {{else}}
+    <marquee behavior="scroll" direction="right"><h1>Bloody Fool.... There are no Notes, Go and create First ...@!$%&^&#</h1></marquee>
+        {{/each}}
+    </article>
+</section>

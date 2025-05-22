@@ -1,0 +1,16 @@
+<h1 style="color: red;">update a note </h1>
+
+    <form action="/api/edit/{{payload._id}}" method="post">
+        <div class="up">
+         <label for="id">noteId </label>
+         <input type="text" id=id name="noteId" value="{{payload.noteId}}">
+        <label for="id">notename </label>
+        <input type="text" id=id name="noteName" value="{{payload.noteName}}">
+        <label for="id">notedescription </label>
+        <input type="text" id=id name="description" value="{{payload.description}}">
+         <label for="id">notestatus </label>
+        <input type="text" id=id name="status" value="{{payload.status}}">
+        </div>
+         <button style="background-color: blanchedalmond; color:chartreuse"> update note</button>
+         
+    </form>

@@ -1,0 +1,12 @@
+{{#if payload}}
+        <div class="c2">
+            <ul class="c4">
+                <li>Note Id: {{payload.noteId}}</li>
+                <li>Note Name: {{payload.noteName}}</li>
+                <li>Note Description: {{payload.description}}</li>
+                <li> Note Status: {{payload.status}}</li>
+            </ul>
+        </div>
+        {{else}}
+   <marquee behavior="scroll" direction="right"><h1>Bloody Fool.... There are no Notes, Go and create First ...@!$%&^&#</h1></marquee>
+        {{/if}}
