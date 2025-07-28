@@ -1,12 +1,16 @@
 {{#if payload}}
-        <div class="c2">
-            <ul class="c4">
-                <li>Note Id: {{payload.noteId}}</li>
-                <li>Note Name: {{payload.noteName}}</li>
-                <li>Note Description: {{payload.description}}</li>
-                <li> Note Status: {{payload.status}}</li>
-            </ul>
-        </div>
-        {{else}}
-   <marquee behavior="scroll" direction="right"><h1>Bloody Fool.... There are no Notes, Go and create First ...@!$%&^&#</h1></marquee>
-        {{/if}}
+  <div class="note-details">
+    <ul class="note-list">
+      <li><strong>Note Id:</strong> {{payload.noteId}}</li>
+      <li><strong>Note Name:</strong> {{payload.noteName}}</li>
+      <li><strong>Note Description:</strong> {{payload.description}}</li>
+      <li><strong>Note Status:</strong> {{payload.status}}</li>
+    </ul>
+  </div>
+{{else}}
+  <div class="no-notes-warning">
+    <marquee behavior="scroll" direction="right">
+      <h2>There are no notes. Please create one first!</h2>
+    </marquee>
+  </div>
+{{/if}}

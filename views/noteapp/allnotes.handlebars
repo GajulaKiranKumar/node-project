@@ -1,29 +1,26 @@
 <section class="notelist">
-    <article>
-        <h1>ALl Notes</h1>
-        {{#each payload}}
-        <div class="c2">
-            <ul class="c3">
-                <li>Note Id: {{this.noteId}}</li>
-                <li>Note Name: {{this.noteName}}</li>
-                <li>Note Description: {{this.description}}</li>
-                <li> Note Status: {{this.status}}</li>
-            </ul>
-            <li class="nte-group">
-                <span class="noteinfo">
-                    <a href=" /api/{{this._id}}">INFORMATION</a>
-                </span>
-                <span class="edit">
-                    <a href="/api/edit/{{this._id}}">UPDATE </a>
-                </span>
-                <sapn class="delete">
-                    <a href="/api/delete/{{this._id}}">DELETE</a>
-                </sapn>
+  <article>
+    <h1 class="note-title">All Notes</h1>
 
-            </li>
-        </div>
-        {{else}}
-    <marquee behavior="scroll" direction="right"><h1>Bloody Fool.... There are no Notes, Go and create First ...@!$%&^&#</h1></marquee>
-        {{/each}}
-    </article>
+    {{#each payload}}
+    <div class="note-card">
+      <ul class="note-details">
+        <li><strong>Note ID:</strong> {{this.noteId}}</li>
+        <li><strong>Note Name:</strong> {{this.noteName}}</li>
+        <li><strong>Description:</strong> {{this.description}}</li>
+        <li><strong>Status:</strong> {{this.status}}</li>
+      </ul>
+
+      <div class="note-actions">
+        <a class="btn info" href="/api/{{this._id}}">Information</a>
+        <a class="btn edit" href="/api/edit/{{this._id}}">Update</a>
+        <a class="btn delete" href="/api/delete/{{this._id}}">Delete</a>
+      </div>
+    </div>
+    {{else}}
+    <marquee behavior="scroll" direction="right">
+      <h2 class="no-notes">😅 No Notes Found. Go Create One!</h2>
+    </marquee>
+    {{/each}}
+  </article>
 </section>

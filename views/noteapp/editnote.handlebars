@@ -1,16 +1,25 @@
-<h1 style="color: red;">update a note </h1>
+<h1 class="update-title">Update a Note</h1>
 
-    <form action="/api/edit/{{payload._id}}" method="post">
-        <div class="up">
-         <label for="id">noteId </label>
-         <input type="text" id=id name="noteId" value="{{payload.noteId}}">
-        <label for="id">notename </label>
-        <input type="text" id=id name="noteName" value="{{payload.noteName}}">
-        <label for="id">notedescription </label>
-        <input type="text" id=id name="description" value="{{payload.description}}">
-         <label for="id">notestatus </label>
-        <input type="text" id=id name="status" value="{{payload.status}}">
-        </div>
-         <button style="background-color: blanchedalmond; color:chartreuse"> update note</button>
-         
-    </form>
+<form class="update-form" action="/api/edit/{{payload._id}}" method="post">
+  <div class="form-group">
+    <label for="noteId">Note ID</label>
+    <input type="text" id="noteId" name="noteId" value="{{payload.noteId}}" required />
+  </div>
+
+  <div class="form-group">
+    <label for="noteName">Note Name</label>
+    <input type="text" id="noteName" name="noteName" value="{{payload.noteName}}" required />
+  </div>
+
+  <div class="form-group">
+    <label for="description">Note Description</label>
+    <input type="text" id="description" name="description" value="{{payload.description}}" required />
+  </div>
+
+  <div class="form-group">
+    <label for="status">Note Status</label>
+    <input type="text" id="status" name="status" value="{{payload.status}}" required />
+  </div>
+
+  <button type="submit" class="update-btn">Update Note</button>
+</form>
